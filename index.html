@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/Tsf.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <title>Donation Page | TSF GRIP</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">TSF Donation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#donate-navbar"
+          aria-controls="donate-navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="donate-navbar">
+          <ul class="navbar-nav ml-auto" id="navbar-links-list">
+            <li class="nav-item active" data-toggle="collapse" data-target="#donate-navbar">
+              <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#donate-navbar">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#donate-navbar">
+              <a class="nav-link" href="#Donate">Donate</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#donate-navbar">
+              <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="home-section container" id="Home">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+          <img src="./img/docs.webp" alt="Covid 19" style="text-align: center;" />
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 text">
+          <h1>TSF Fund Raiser</h1>
+          <p> Your little effort can give others second chance to live life ❤️</p>
+          <p> Each Donation Makes A Difference. </p>
+        </div>
+      </div>
+    </section>
+    <section class="about-section container-fluid" id="About">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column">
+              <img src="./img/covid_doctors.webp" alt="Doctors">
+              <img src="./img/covid.jpg" class="mt-5" alt="Stop Covid">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center">
+              <div class="text">
+                <h1>About Us</h1>
+                <p>We belive "Be the change you want to see in the world".
+                  With that in mind we have to started this donation drive to help the people fighting Covid-19 /
+                  Coronavirus.
+                  <br>
+                  <br>
+                  The amount collected from donation goes solely to provide the corona fighters with food and other
+                  necessities including but not limited to Oxygen Cylinders, Masks, Injections, Medications and other
+                  necessities.
+                  <br>
+                  <br>
+                  Help Us Fight this Coronavirus together and help the people in nedd with everything we have.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="donate-section" id="Donate">
+      <h1 class="text-center">You're making a change!</h1>
+      <div class="card text-center" style="width: 18rem; margin: auto;">
+        <div class="card-body">
+          <div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_HvnjM5Z6ZnZKzM/view"
+            data-text="Donate Now" data-color="#528FF0" data-size="large">
+            <script>
+              (function () {
+                var d = document; var x = !d.getElementById('razorpay-embed-btn-js')
+                if (x) {
+                  var s = d.createElement('script'); s.defer = !0; s.id = 'razorpay-embed-btn-js';
+                  s.src = 'https://cdn.razorpay.com/static/embed_btn/bundle.js'; d.body.appendChild(s);
+                } else {
+                  var rzp = window['_rzp_'];
+                  rzp && rzp.init && rzp.init()
+                }
+              })();
+            </script>
+          </div>
+        </div>
+    </section>
+    <section class="contact-section" id="Contact">
+      <h1 class="text-center">Contact Us!</h1>
+      <div class="card text-center" style="width: 50%; margin: auto;">
+        <div class="card-body" style="text-align: start;">
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" name="name" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="message">Message: </label>
+              <textarea rows="6" name="message" class="form-control" id="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer className="fixed-bottom">
+    Made By <a href="https://lakshayyadav.tech" target="_blank" rel="noopener noreferrer">Lakshay Yadav</a>
+  </footer>
+</body>
+<script>
+  const navLinksContainer = document.getElementById("navbar-links-list");
+  const navLinks = navLinksContainer.getElementsByClassName("nav-item");
+
+  // Loop through links to check active one
+  for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener("click", function () {
+      let current = document.getElementsByClassName("active")
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+
+</script>
+
+</html>
